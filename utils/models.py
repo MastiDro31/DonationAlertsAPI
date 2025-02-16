@@ -72,8 +72,8 @@ class DonationsMeta(BaseModel):
 
 class Donations(BaseModel):
     items: List[DonationsData]
-    links: Dict[str, DonationsLinks]
-    meta: Dict[str, DonationsMeta]
+    links: dict
+    meta: dict
     
 
 class User(BaseModel):
